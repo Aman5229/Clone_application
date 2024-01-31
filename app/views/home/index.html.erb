@@ -1,0 +1,19 @@
+<div class="container my-5">
+  <div class="row justify-content-center gap-5">
+    <div class="col-md-6">
+      <div class="d-flex flex-column gap-3">
+        <%= render 'story/stories_list' %>
+        <div class="flex flex-column">
+          <%= render 'posts/post', post: current_user.posts.first %>
+          <%= render 'posts/post', post: current_user.posts.first %>
+          <%= render 'posts/post', post: current_user.posts.first %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="d-flex flex-column gap-3">
+        <%= render 'suggestions/suggestions_list' %>
+      </div>
+    </div>
+  </div>
+</div>
